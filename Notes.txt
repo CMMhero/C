@@ -1,0 +1,98 @@
+PSEUDOCODE
+prompt,get -> scanf
+display/print -> printf -> bisa diformat
+semua huruf kecil
+
+FORMAT TAMPILAN BILANGAN
+%d -> integer
+%f -> float
+%c -> char
+%s -> string
+
+IDENTIFIER
+input? x
+input1 v
+1input x
+
+inputuntukdata_perhitungan_dan_perkalian_antaraAdanB_inputA
+inputuntukdata_perhitungan_dan_perkalian_antaraAdanB_inputB
+dianggap sama
+
+TIPE DATA
+char(8), 
+short(16), int(16/32), long(32), long long(64), 
+float(32), double(64), long double(80/96)
+
+CONSTANTS
+#define PI 3.14
+const float PI = 3.14
+
+VARIABLE
+//datatype variable_name [=init_value] [, variable_name ...];
+int i1 = 5, i2;
+
+OPERATIONS
+a=5;
+a=1+2;
+a=a+b;
+
+OPERATORS
+unary: a++; --b;
+binary: x = a+b; y = a*b
+ternary: x = a>b ? a-b : b-a;
+
+SIMPLE ASSIGNMENT OPERATOR
+//variable_name = expression;
+x = y; baca dari kanan ke kiri
+
+ARITHMETIC OPERATORS
++, -, *, /, %
+
+COMPARATIVE OPERATORS
+== equal to
+!= not equal
+<, >, >=, <=
+
+LOGICAL OPERATORS
+&& and
+|| or
+! not
+
+BITWISE OPERATORS
+& and
+| or
+^ exclusive or
+~ not
+
+SHIFT OPERATORS
+>> shift right
+<< shift left
+
+COMPUND ASSIGNMENT OPERATORS
+//x[operator]=y -> x = x[operator]y
+x+=y -> x = x+y
+
+CONDITIONAL OPERATOR
+//condition ? [if true]: [if false];
+
+INPUT/OUTPUT
+gets, getchar, getche, getch
+puts, puthcar, putch
+
+FUNCTION / MODULE
+function prototype
+//return_value_type function_name(parameter_list);
+int rand(void);
+int abs(int x);
+double pow(double x, double y);
+void clrscr(void);
+
+FORMATTED OUTPUT
+//printf(format_control_string, other_arguments);
+converstion specifications
+%[flags][field_width][.precision][length_modifier]specifier
+
+FORMATTED INPUT
+converstion specifications
+%[*][field_width][length_modifier]specifier
+
