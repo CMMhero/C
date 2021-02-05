@@ -17,7 +17,7 @@ void input(int *jumlah) {
 	printf("  Insert student Information  \n");
 	printf("------------------------------\n");
 	printf("Name\t: ");
-	scanf("%s", &name);fflush(stdin);
+	scanf("%[^\n]s", &name);fflush(stdin);
 	printf("Major\t: ");
 	scanf("%s", &major);fflush(stdin);
 	printf("GPA\t: ");
