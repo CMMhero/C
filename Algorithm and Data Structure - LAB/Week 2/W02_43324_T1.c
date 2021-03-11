@@ -7,7 +7,7 @@ struct Student {
 	char major[35];
 	float gpa;
 	struct Student *next;
-} *head, *tail, *curr;
+} *head, *tail, *node;
 
 void input(int *jumlah) {
 	system("cls");
@@ -23,17 +23,17 @@ void input(int *jumlah) {
 	printf("GPA\t: ");
 	scanf("%f", &gpa);fflush(stdin);
 	
-	curr = (struct Student*)malloc(sizeof(struct Student));
-	strcpy(curr->name, name);
-	strcpy(curr->major, major);
-	curr->gpa = gpa;
-	curr->next = NULL;
+	node = (struct Student*)malloc(sizeof(struct Student));
+	strcpy(node->name, name);
+	strcpy(node->major, major);
+	node->gpa = gpa;
+	node->next = NULL;
 	
 	if(head == NULL) {
-		head = tail = curr;
+		head = tail = node;
 	} else {
-		tail->next = curr;
-		tail = curr;
+		tail->next = node;
+		tail = node;
 	}
 	printf("Inserting data\n");
 	printf("New students added\n");
@@ -49,12 +49,12 @@ void show() {
 	printf("--------------------------------------------------------------\n");
 	printf("|No.|             Name             |      Major      |  GPA  |\n");
 	printf("--------------------------------------------------------------\n");
-	curr = head;
+	node = head;
 	
 	if(head != NULL) {
-		while(curr != NULL) {
-			printf("|%d  | %-28s | %-15s | %.2f  |\n", i, curr->name, curr->major, curr->gpa);
-			curr = curr->next;
+		while(node != NULL) {
+			printf("|%-3d| %-28s | %-15s | %.2f  |\n", i, node->name, node->major, node->gpa);
+			node = node->next;
 			i++;
 		}
 	}
