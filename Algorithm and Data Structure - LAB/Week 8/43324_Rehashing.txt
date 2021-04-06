@@ -1,0 +1,5 @@
+a) Rehashing dilakukan agar terhindar dari collision
+b) Berdasarkan gambar di atas, rehashing dilakukan saat hash table telah terpenuhi lebih dari atau sama dengan 70%.
+c) Dalam melakukan rehashing, kita harus menentukan size baru untuk hash table, lalu kita masukkan key index baru dengan size hash table yang baru.
+d) Jelaskan secara singkat apa itu Sieve of Erathosthenes dalam 1 kalimat!
+e) Size yang baru berupa bilangan prima terkecil yang lebih besar dari 2x size sebelumnya.
